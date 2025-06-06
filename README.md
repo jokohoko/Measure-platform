@@ -12,3 +12,5 @@ Select board Rambo and COM port.
 And upload.
 
 The code has the main Ino file to edit and some configuration files behind it that can be chosen from based on the exact hardware you are using.
+
+The connection with vernier sensors is done trough the E-motor current pin (pwm to smooth voltage). Thus this provides an output of 0 to 1.625V when sending PWM output of 0 to 255 signals. In Logger pro or excel this can be converted with an equation by multiplying with 150 roughly to get back to mm.
