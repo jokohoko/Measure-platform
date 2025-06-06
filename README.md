@@ -1,4 +1,9 @@
-# Measure-platform
+# Measure-platform AKA  Prusa spare parts hacks
+The code below is the first implemenation based on the spare prusa Parts  
+Based on the spares of an old MK2 printer  
+Using the Mini Rambo (the one with plug in power connectors)  
+Using the X axis with end stop  
+Start button connected to pin Z_MIN  
 
 To upload code to the motherboards you need to add the board definition to the board manager.  
   
