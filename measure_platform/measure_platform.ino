@@ -38,7 +38,10 @@ void setup() {
     pot.begin(4);
     pot.setValue(0, 100);
   */
-  analogWrite(MOTOR_CURRENT_PWM_XY_PIN, &00); //255=2A, 100 = 0.8A?
+  analogWrite(MOTOR_CURRENT_PWM_XY_PIN, 100); //255=2A, 100 = 0.8A?
+  //use 166 at most, this gives 1.3A to the motors (with a spec of 1A).
+  //100 is a safer usage current of 0.8A to allow for errors
+  //25 is enough to move without real strength.
 }
 
 void loop() {
